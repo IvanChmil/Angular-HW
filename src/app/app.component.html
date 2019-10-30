@@ -1,0 +1,36 @@
+<h1>LUN HOMEPAGE</h1>
+
+<input type="text" (input)="inp($event)">
+
+<button (click)="btn()">click</button>
+<button (click)="register()">register</button>
+<button (click)="loginInp()">login</button>
+
+<div *ngIf="show">
+  {{inputValue}}
+</div>
+
+<div *ngIf="reg">
+<input type="text" value="Name">
+<br>
+<input type="text" value="email">
+<br>
+<input type="text" value="password">
+</div>
+
+<div *ngIf="login">
+  <input type="text" value="email">
+  <br>
+  <input type="text" value="password">
+</div>
+
+
+<div *ngFor="let home of house">
+  <br>
+  city: {{home.city}}
+  <br>
+  id: {{home.id}}
+  <br>
+  <br>
+</div>
+
